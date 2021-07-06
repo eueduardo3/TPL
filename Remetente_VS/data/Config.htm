@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=auto">
+  <title>       Configuração         </title>
+  <link href="css" rel="stylesheet">
+</head>
+<body>
+  <h1> Configuração Rodomuda </h1>
+  
+  <h3>
+  <form name="config" action="configSave" method="post">
+  <table>
+    <tr>
+      <th colspan="2" class="msg">Configuração</th>
+    </tr>
+    <tr>
+      <th>Identificação</th>
+      <td>
+        <input type="text" name="id" value="#id#" size="25" maxlength="29">
+      </td>
+    </tr>
+
+    <tr>
+      <th rowspan="1">Módulos</th>
+        <td>Insira o MAC: <input type="text" name="EndMacA" value="#EndMacA#" size="36" maxlength="36"></td>
+      <td>
+        <input type="radio" name="no" value="0"#noA#> 1º &nbsp;&nbsp;
+        <input type="radio" name="no" value="1"#noB#> 2º&nbsp;&nbsp;
+		<input type="radio" name="no" value="2"#noC#> 3°
+      </td>
+    </tr>
+
+    <tr>
+      <th colspan="2" class="msg"><input id="save" type="submit" value="Gravar" onClick="return confirm('Gravar a configuração?')"></th>
+    </tr>
+  </table>
+  </form>
+  </h3>
+</body>
+</html>
+
